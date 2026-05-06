@@ -33,8 +33,7 @@ public class Account {
         if (amount > 0 && amount <= balance) { 
             balance -= amount; 
         } else { 
-            System.out.println("Invalid or insufficient 
-balance"); 
+            System.out.println("Invalid or insufficient balance"); 
         } 
     } 
  
@@ -61,8 +60,7 @@ class Savings extends Account {
         if (amount > 0 && amount <= get_balance()) { 
             setBalance(get_balance() - amount); 
         } else { 
-            System.out.println("Savings: Insufficient 
-balance"); 
+            System.out.println("Savings: Insufficient balance"); 
         } 
     } 
  
@@ -97,7 +95,7 @@ class Credit extends Account {
 } 
  
  
-public class BankAccount { 
+class BankAccount { 
     public static void main(String[] args) { 
  
         Savings s = new Savings(1000, 5); 
@@ -114,6 +112,6 @@ public class BankAccount {
         c.addInterest(); 
         c.get_details(); 
     } 
-}  {
+
     
 }
